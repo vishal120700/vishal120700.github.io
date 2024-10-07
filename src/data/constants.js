@@ -5,7 +5,7 @@ export const Bio = {
     "passionate about using data to drive business decisions. With skills in statistical analysis and data visualization, I thrive on uncovering insights and collaborating with teams to create impactful solutions.",
   github: "https://github.com/vishal120700",
   resume:
-    "https://firebasestorage.googleapis.com/v0/b/vishal-pagare-portfolio.appspot.com/o/Vishal_s_Resume.pdf?alt=media&token=4399db8f-5471-404f-9af6-2e350491c77b",
+    "https://firebasestorage.googleapis.com/v0/b/vishal-pagare-portfolio.appspot.com/o/Vishal_s_Resume.pdf?alt=media&token=f53681a9-7286-4fb9-ac8b-1efd03324b5b",
   linkedin: "https://www.linkedin.com/in/vishal-pagare",
   // twitter: "https://twitter.com/sandesharsud",
   // insta: "https://www.instagram.com/sandesh_arsud/",
