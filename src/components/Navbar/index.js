@@ -13,7 +13,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo >
-          <h3 style={{ color: `white` }}>Omkar Dhole</h3>
+          <h3 style={{ color: `white` }}>Vishal Pagare</h3>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
