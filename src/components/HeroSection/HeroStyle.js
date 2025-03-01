@@ -1,5 +1,14 @@
-import styled from "styled-components";
-import _default from "../../themes/default";
+import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
+
+const shimmer = keyframes`
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+`;
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -99,11 +108,13 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
+  object-fit: cover;
   border: 2px solid ${({ theme }) => theme.primary};
+  transition: all 0.3s ease;
 
   @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @media (max-width: 640px) {
@@ -200,4 +211,36 @@ export const ResumeButton = styled.a`
         font-size: 18px;
     } 
 
+`;
+
+export const FloatingImage = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.25));
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+`;
+
+export const LoadingContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${({ theme }) => theme.card_light};
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 1.5rem;
 `;
